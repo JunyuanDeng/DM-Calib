@@ -29,21 +29,6 @@
 
 For more required dependencies, please refer to `requirements.txt`.
 
-Here is a minimal usage example:
-
-```python
-from geocalib import GeoCalib
-
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model = GeoCalib().to(device)
-
-# load image as tensor in range [0, 1] with shape [C, H, W]
-image = model.load_image("path/to/image.jpg").to(device)
-result = model.calibrate(image)
-
-print("camera:", result["camera"])
-print("gravity:", result["gravity"])
-```
 
 ## Inference
 
