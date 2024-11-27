@@ -9,7 +9,7 @@
 **DM-Calib** is a diffusion-based approach for estimating pinhole camera intrinsic parameters from a single input image. We introduce a new image-based representation, termed Camera Image, which losslessly encodes the numerical camera intrinsics and integrates seamlessly with the diffusion framework. Using this representation, we reformulate the problem of estimating camera intrinsics as the generation of a dense Camera Image conditioned on an input image. By fine-tuning a stable diffusion model to generate a Camera Image from a single RGB input, we can extract camera intrinsics via a RANSAC operation. We further demonstrate that our monocular calibration method enhances performance across various 3D tasks, including zero-shot metric depth estimation, 3D metrology, pose estimation and sparse-view reconstruction.
 
 <p align="center">
-  <img src="assets/pipeline_calib.png" width = 100% height = 100%/>
+  <img src="pipeline_calib.png" width = 100% height = 100%/>
 </p>
 
 
