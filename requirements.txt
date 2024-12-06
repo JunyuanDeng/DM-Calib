@@ -1,0 +1,13 @@
+xformers
+transformers
+accelerate
+pillow
+omegaconf
+opencv-python
+h5py
+datasets
+einops
+tensorboard
+scikit-image
+matplotlib
+plyfile
