@@ -1,7 +1,6 @@
 <div align="center">
     <h1>DM-Calib</h1>
     <h2> Boost 3D Reconstruction using Diffusion-based Monocular Camera Calibration</h2> <br>
-     <strong>We will open source the complete code after the paper is accepted ！</strong> <br><br>
      <a href='https://arxiv.org/abs/2411.17240'><img src='https://img.shields.io/badge/arXiv-DM_Calib-green' alt='arxiv'></a>
      <a href='https://huggingface.co/juneyoung9/DM-Calib'><img src='https://img.shields.io/badge/HuggingFace-DM_Calib-yellow' alt='HuggingFace'></a>
 </div>
@@ -18,6 +17,7 @@
 
 - [2024/11.27]: 🔥 We release the DM-Calib paper on arXiv !
 - [2024/12.06]: 🔥 We release the DM-Calib inference code !
+- [2025/07.30]: 🔥 Paper is accept by ICCV 2025!
 
 </br>
 
@@ -76,11 +76,9 @@ If you find our work helpful, please cite our paper:
 @misc{deng2024boost3dreconstructionusing,
       title={Boost 3D Reconstruction using Diffusion-based Monocular Camera Calibration}, 
       author={Junyuan Deng and Wei Yin and Xiaoyang Guo and Qian Zhang and Xiaotao Hu and Weiqiang Ren and Xiaoxiao Long and Ping Tan},
-      year={2024},
-      eprint={2411.17240},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.17240}, 
+      booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+      year={2025}
+
 }
 ```
 
