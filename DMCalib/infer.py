@@ -188,7 +188,10 @@ if __name__ == "__main__":
     if run_depth:
         vae = AutoencoderKL.from_pretrained(stable_diffusion_repo_path, subfolder="vae")
         unet = UNet2DConditionModel.from_pretrained(checkpoint_path, subfolder="depth")
-        vae.decoder = torch.load(os.path.join(checkpoint_path, "depth", "vae_decoder.pth"))
+        from safetensors.torch import load_file
+        decoder_file = os.path.join(checkpoint_path, "vae_decoder.safetensors")
+        dec_state = load_file(decoder_file)
+        vae.decoder.load_state_dict(dec_state, strict=False)  
         pipe_depth = DepthEstimationPipeline(
             vae=vae,
             text_encoder=text_encoder,
